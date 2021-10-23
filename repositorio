@@ -1,0 +1,280 @@
+*==== HTML =====*/
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+   
+    <link rel="stylesheet" href="css/style.css">
+    <title>Minha primeira página - Margaret Hamilton</title>
+</head>
+<body>
+     <!-- HEADER BANNER  -->
+     <div class="banner">
+         <div class="container">
+             <h3 class="banner-titulo">Oi, eu sou Margaret Hamilton</h3>
+             <p class="banner-subtitulo">Conheça mais sobre mim</p>
+             <a href="#" class="btn btn-branco">Veja mais sobre mim</a>
+         </div>
+     </div>
+
+     <!--  SEÇÃO SOBRE -->
+     <div class="sobre container">
+         <h2 class="sobre-titulo">Um pouco mais sobre mim</h2>
+         <div class="sobre-flex">
+             <div class="sobre-descricao">
+                <div class="sobre-descricao">
+                    <p class="sobre-descricao__destaque margin-txt">
+                        Eu sou <strong>Margaret Hamilton</strong>, sou empresária, engenheira de software e cientista da computação e adoro escrever códigos.
+                    </p>
+                    <p class="sobre-descricao__texto margin-txt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsum officia fugit. Distinctio ab dicta natus harum error quis dolorem quisquam? Perspiciatis tempore dolorum delectus vel modi ipsum eligendi nisi?
+                    </p>
+                    <a href="#" class="btn btn-roxo">Veja meu CFCV</a>
+                </div>
+             </div>
+             <div class="sobre-habilidades">
+                 <h3 class="sobre-habilidades__titulo">Minhas Habilidades</h3>
+                 <ul class="sobre-habilidades__lista">
+                    <li>Teste de sistemas</li>
+                    <li>Priority scheduling</li>
+                    <li>Desenvolvi o conceito computação paralela</li>
+                    <li>Sistemas e design de software</li>
+                    <li>Arquiteta de software</li>
+                    <li>Engenheira de software</li>
+                    <li>Computação paralela</li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+
+     <!-- REDES SOCIAIS -->
+     <div class="footer container">
+         <div class="redes-sociais">
+             <a href="#" target="_blank" class="redes-sociais__link">
+                 <img class="redes-sociais__img" src="img/facebook.png">
+                 <h3 class="redes-sociais__titulo">Facebook</h3>
+                 <p>/MargaretHamilton</p>
+             </a>
+             <a href="#" target="_blank" class="redes-sociais__link">
+                <img class="redes-sociais__img" src="img/twitter.png">
+                <h3 class="redes-sociais__titulo">Twitter</h3>
+                <p>/MargaretHamilton</p>
+            </a>
+            <a href="#" target="_blank" class="redes-sociais__link">
+                <img class="redes-sociais__img" src="img/in.png">
+                <h3 class="redes-sociais__titulo">Linkedin</h3>
+                <p>/MargaretHamilton</p>
+            </a>
+            <a href="#" target="_blank" class="redes-sociais__link">
+                <img class="redes-sociais__img" src="img/github.png">
+                <h3 class="redes-sociais__titulo">Github</h3>
+                <p>/MargaretHamilton</p>
+            </a>
+         </div>
+         <div class="footer-copyright">
+             <p>Feito com muito amor por Bruna  |  Copyright 2020</p>
+         </div>
+     </div>
+</body>
+</html>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/*==== CSS  =====*/
+
+
+/* DESKTOP-FIRST 1920px */
+
+/* GERAL */
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{    
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    margin:0;    
+}
+
+/* LAYOUT */
+.container{
+    max-width:1080px;
+    margin:0 auto;    
+}
+
+a{
+    text-decoration:none;
+}
+
+/* BOTÃO */
+.btn{
+    border-radius: 3rem;
+    text-transform: uppercase;    
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-branco{
+    color:#7E459B;
+    background-color:white;
+    padding: 1rem 1.5rem;
+}
+
+.btn-roxo{
+    color:#7E459B;  
+    border: 1px solid #7E459B;
+    padding: 0.6rem 1.5rem;
+}
+
+
+/* HEADER BANNER */
+
+.banner{    
+    background: url(../img/banner-bg.png) center no-repeat;
+    background-size: cover;
+    height: 90vh;
+    color:white;
+    text-align: center;
+    padding-top:20rem;
+}
+
+.banner-titulo{
+    font-size:3rem;
+}
+
+.banner-subtitulo{
+    font-size:2.3rem;
+    margin-bottom:2.813rem;    
+}
+
+/* SEÇÃO SOBRE */
+.sobre-flex{
+    display: flex;
+    margin-top:1.5rem;
+    line-height:1.5;
+}
+
+.sobre-titulo{
+    font-size: 2.715rem;
+    color: #C4C4C4;
+    margin-top: 3rem;      
+}
+
+.sobre-descricao, .sobre-habilidades{
+    width:70%;
+    display: inline-block;
+}
+
+.sobre-descricao__destaque, .sobre-habilidades__titulo{
+    font-size:1.3rem;
+    margin-bottom: 1rem;    
+}
+
+.sobre-descricao__texto{
+    margin-bottom: 2.813rem;
+}
+
+.sobre-habilidades__lista{
+    padding-left: 1rem;  
+    line-height: 1.7;
+}
+
+/* REDES SOCIAIS */
+.footer{
+    text-align: center;    
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: space-around;
+}
+.redes-sociais__link{
+    width: 20%;
+    background-color:#7E459B;
+    padding:2rem 0rem;
+    color:white;
+    margin-top:3rem;  
+}
+
+.redes-sociais__img{
+    margin-bottom: 1rem;
+}
+
+.redes-sociais__titulo{
+    font-size:1.6rem;  
+    margin-bottom: 1rem;  
+}
+
+.footer-copyright{
+    color:#C4C4C4;
+    font-weight: lighter;
+    padding: 2rem 0;
+    margin:1rem 0;
+}
+
+
+/* MEDIA QUERIES */
+/* TABLET PAISAGEM */
+@media (max-width:1024px){
+    .container{
+        max-width: 960px;
+        padding: 0 5rem;
+    }
+    .banner{
+        padding-top:15rem;
+    }
+}
+
+/* TABLET PAISAGEM / CELULAR */
+@media(max-width:768px){
+    .container{
+        max-width: 960px;
+        padding: 0 10rem;
+    }
+   
+    .banner{
+        padding-top:10rem;
+    }
+    .sobre-flex{
+        display: block;
+    }
+   
+    .sobre-descricao, .sobre-habilidades{
+        width:100%;
+    }
+
+    .sobre-descricao__texto{
+        margin-bottom: 2rem;
+    }
+   
+    .sobre-habilidades__titulo{
+        margin-top:2rem;
+    }
+
+    .redes-sociais{
+        flex-wrap: wrap;
+    }
+
+    .redes-sociais__link{
+        width: 100%;  
+    }
+}
+
+@media (max-width: 500px){
+    .container {
+        padding: 0 5rem;
+    }
+    .banner{
+        padding-top:10rem;
+    }
+
+    .banner-titulo{
+        font-size:2.5rem;
+    }
+   
+    .banner-subtitulo{
+        font-size:1.5rem;
+        margin-bottom:2.5rem;    
+    }
+}
